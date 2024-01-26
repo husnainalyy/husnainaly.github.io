@@ -1,61 +1,76 @@
-#body{
-    background: linear-gradient(70deg,rgb(178, 116, 210),rgb(99, 10, 154));
+#body {
+    background: linear-gradient(70deg, rgb(178, 116, 210), rgb(99, 10, 154));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-#box{
+
+#box {
     border-radius: 23px;
     border: 2px transparent;
-    height: auto;
-    padding: 1px; 
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding: 10px;
+    margin: 50px auto;
+    max-width: 800px;
     background-color: aliceblue;
-    
-    
+    box-sizing: border-box;
 }
-#numbering{
+
+#numbering {
     text-align: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.432);
     margin-top: 10px;
-    margin-inline: 20%;
 }
 
-#question{
-    font-size:20px;
+#question {
+    font-size: 20px;
     text-align: center;
     margin: 8px;
     font-weight: 150;
     font-family: Sans-serif;
     word-wrap: break-word;
 }
-#qAns{
-    width: 78%;
+
+#qAns {
+    width: 100%;
+
     border: 2px transparent;
-    height: 178px;
     padding: 8px;
     margin: auto;
-    
+
 }
-.answers{
-    border-radius: 100px ;
+
+.answers {
+    border-radius: 10px;
+    /* Smaller border-radius */
     border-color: rgba(0, 0, 0, 0.402);
-    width: 500px;
+    width: 100%;
+    /* Take full width */
     height: 38px;
     text-align: center;
-    margin-top: 4px;
+    margin-top: 8px;
+    /* Smaller top margin */
     background-color: transparent;
-   
+
 }
-#next{
-    border-radius: 100px;
-    margin-block: 12px;
-    width: 300px;
+
+#next {
+    border-radius: 10px;
+    /* Smaller border-radius */
+    margin-top: 12px;
+    width: 100%;
+    /* Take full width */
     border-color: transparent;
-    margin-inline: 180px;
     background-color: rgb(28, 174, 227);
 }
 
+@media (max-width: 600px) {
+    #box {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 /* the css of result section */
 
 #resultDiv {
